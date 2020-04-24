@@ -11,7 +11,9 @@ with open('test.csv', 'r') as file:
         #a, b, c, d = row #error as in second row it doesn't have any value.
         # print (a,b,c,d)
 
-
+    reader = csv.DictReader()
+    reader = csv.DictWriter(file)
+    
 '''
 Writing to the files
 '''
@@ -29,3 +31,4 @@ with open('test1.csv', 'w') as file:
     writer = csv.writer(file)
     #This unfortunately prints out a new line everytime.
     writer.writerow(hosts)
+
