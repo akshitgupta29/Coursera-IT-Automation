@@ -57,16 +57,16 @@ def contents_of_file(filename):
   create_file(filename)
 
   # Open the file
-  with open(filename, 'r') as file:
-    # Read the rows of the file
-    rows = csv.reader(file)
-    # Process each row
-    for row in rows:
-      name,color, type1 = row
-      # Format the return string for data rows only
-        result_string = []
-        return_string += "a {} {} is {}\n".format(name, color, type1)
-return return_string
+#   with open(filename, 'r') as file:
+#     # Read the rows of the file
+#     rows = csv.reader(file)
+#     # Process each row
+#     for row in rows:
+#       name,color, type1 = row
+#       # Format the return string for data rows only
+#         result_string = []
+#         return_string += "a {} {} is {}\n".format(name, color, type1)
+# return return_string
 
 #Call the function
 print(contents_of_file("flowers.csv"))
