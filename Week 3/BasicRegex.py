@@ -8,3 +8,5 @@ print (print2)
 
 print3 = re.search(r"a", 'Akshit Gupta', re.IGNORECASE)
 print (print3)
+
+print4 = re.search()
