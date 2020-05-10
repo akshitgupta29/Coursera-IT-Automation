@@ -18,4 +18,16 @@ class TestRearrange (ut.TestCase):
         testcase = ""
         expected = ""
         self.assertEqual(rearrange_name(testcase),expected)
+    
+    #Gives assertion error meaning that the values doesn't match in here.
+    def test_double (self):
+        testcase = "Gupta, Akshit G."
+        expected = "Akshit G. Gupta"
+        self.assertEqual (rearrange_name(testcase), expected)
+
+    def test_single (self):
+        testcase = "Akshit"
+        expected = "Akshit"
+        self.assertEqual(rearrange_name(testcase), expected)
+
 ut.main()
