@@ -1,4 +1,6 @@
-## The repository is for the Coursera course - Using Pyhthon to interact with the Operating System taught by Google.
+## Using Python to interact with the Operating System
+
+The repository is for the Coursera course - Using Python to interact with the Operating System taught by Google.
 
 The course mainly covers the following topics:
     Week 1: Getting to know the Python Scripts
