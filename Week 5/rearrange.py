@@ -7,4 +7,4 @@ def rearrange_name (name):
         return name
     return "{} {}".format (result[2], result[1])
 
-print (rearrange_name('Gupta, Akshit G.'))
+#print (rearrange_name('Gupta, Akshit G.'))
