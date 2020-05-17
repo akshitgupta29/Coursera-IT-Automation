@@ -20,6 +20,6 @@ class TestTryExpect (unittest.TestCase):
     def test_invalid_len (self):
         testcase = "Akshit"
         minlen = -1
-        self.assertRaise
+        self.assertRaises(ValueError, valid_user, testcase, minlen)
 
 unittest.main()
