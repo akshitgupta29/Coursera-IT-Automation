@@ -11,6 +11,11 @@ class EmailsTest (unittest.TestCase):
         testcase = [None, 'John']
         expected = "Missing parameters"
         self.assertEqual (find_email(testcase),expected)
+
+    def test_email_missing (self):
+        testcase = [None, "Roy", "Cooper"]
+        expected = "No email address found"
+        self.assertEqual(find_email(testcase), expected)
 if __name__ == '__main__':
 	unittest.main()
 

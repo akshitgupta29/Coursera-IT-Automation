@@ -15,8 +15,11 @@ def populate_dictionary(filename):
 def find_email(argv):
 	try:
 		fullname = str(argv[1] + " " + argv[2])
-		email_dict = populate_dictionary('/home/student-02-cc873db5fdea/data/user_emails.csv')
-		return email_dict.get(fullname.lower())
+		email_dict = populate_dictionary('data/user_emails.csv')
+		if email_dict.get(fullname.lower()):
+			return email_dict.get(fullname.lower())
+		else:
+			return "No email address found"
 	except IndexError:
 		return "Missing parameters"
 
